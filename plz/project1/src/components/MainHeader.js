@@ -16,14 +16,14 @@ export default Mainheader;
 
 // class type 
 
-class MainheaderClass extends React.Component{
-    render(h) {
-        return (
-            <h1>
-                {this.props.text}
-            </h1>
-        )
-    }
+// class MainheaderClass extends React.Component{
+//     render(h) {
+//         return (
+//             <h1>
+//                 {this.props.text}
+//             </h1>
+//         )
+//     }
      
-}
-export default MainheaderClass;  
+// }
+// export default MainheaderClass;  

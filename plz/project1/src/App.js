@@ -10,16 +10,34 @@ function App() {
   const buttonClick = () => {
     text === "Hidden" ? setText("Show") : setText("Hidden")
   }
+  const onChange = (e) =>{
+    const inputText = e.target.value;
+    setText(inputText);
+  }
   return (
-    <div className="App">
-      {text === "show" && <MainHeaderP text="Facing"></MainHeaderP>}
+    // <div className="App">
+    //   {text === "show" && <MainHeaderP text="Facing"></MainHeaderP>}
 
-      {text === "show"
-      ? <MainHeaderP text="Facing"></MainHeaderP>
-      : <MainHeaderP text="Facing"></MainHeaderP>}
-      <button>{text}</button>
+    //   {text === "show"
+    //   ? <MainHeaderP text="Facing"></MainHeaderP>
+    //   : <MainHeaderP text="Facing"></MainHeaderP>}
+    //   <button>{text}</button>
+
+    // </div>
+
+    <div className="App">
+
+      <h1>{text}</h1>
+
+      <input onChange= {onChange}> </input>
+      {/* <input onChange= {(e)=> {onChange(e)}}> </input> */}
+
+
 
     </div>
+
+
+
   );
 }
 
