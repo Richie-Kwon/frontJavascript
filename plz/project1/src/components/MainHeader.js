@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./../style/Mainheader.css";
 
 function Mainheader(){
@@ -27,3 +27,5 @@ export default Mainheader;
      
 // }
 // export default MainheaderClass;  
+
+useEffect();
